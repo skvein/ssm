@@ -1,0 +1,13 @@
+server:
+  port: 8011
+spring:
+  application:
+    name: erbing-member-service
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/erbing?characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+    username: erbing
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:com/skevin/ssm/**/*Mapper.xml
+  type-aliases-package: com.skevin.ssm.entity
